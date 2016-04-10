@@ -4,7 +4,12 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+
+
+global.jQuery = require('jquery');
 var bootstrap = require('bootstrap');
+var jsdom = require("jsdom").jsdom;
+//global.$ = require('jquery/dist/jquery')(jsdom().createWindow());
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
