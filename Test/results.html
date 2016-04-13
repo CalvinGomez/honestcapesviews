@@ -10,9 +10,11 @@
     <title>Bolt - Free Bootstrap 3 Theme</title>
 
     <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet"  href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/assets/css/star-rating.css" media="all" rel="stylesheet" type="text/css"/>
   </head>
 
-<body>
+  <body>
 
   <div id="info">
     <div style="width: 30%; float: left; background-color: Aqua;">
@@ -25,26 +27,45 @@
         <h2>Nadir Weibel</h2>
       </div>
     </div>
-
-<!-- Rating -->
-    <div class="rating">
-      <span class="starRating">
-        <input id="rating5" type="radio" name="rating" value="5">
-        <label for="rating5">5</label>
-        <input id="rating4" type="radio" name="rating" value="4">
-        <label for="rating4">4</label>
-        <input id="rating3" type="radio" name="rating" value="3">
-        <label for="rating3">3</label>
-        <input id="rating2" type="radio" name="rating" value="2">
-        <label for="rating2">2</label>
-        <input id="rating1" type="radio" name="rating" value="1">
-        <label for="rating1">1</label>
-      </span>
-    </div>
-
   </div>
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="bootstrap.js"></script>
 
+  <!-- Rating -->
+  <input id="rating-input" type="number" />
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="bootstrap.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="../public/assets/js/star-rating.js" type="text/javascript"></script>
+  <script>
+    jQuery(document).ready(function () {
+        $("#input-21f").rating({
+            starCaptions: function(val) {
+                if (val < 3) {
+                    return val;
+                } else {
+                    return 'high';
+                }
+            },
+            starCaptionClasses: function(val) {
+                if (val < 3) {
+                    return 'label label-danger';
+                } else {
+                    return 'label label-success';
+                }
+            },
+            hoverOnClear: false
+        });
+        
+        $('#rating-input').rating({
+              min: 0,
+              max: 5,
+              step: 1,
+              size: 'lg',
+              showClear: false
+           });
+        
+        $('.rb-rating').rating({'showCaption':true, 'stars':'3', 'min':'0', 'max':'3', 'step':'1', 'size':'xs', 'starCaptions': {0:'status:nix', 1:'status:wackelt', 2:'status:geht', 3:'status:laeuft'}});
+    });
+  </script>
   </body>
 </html>
