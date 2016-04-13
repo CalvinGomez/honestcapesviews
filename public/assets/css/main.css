@@ -164,6 +164,12 @@ a:after {
 	font-weight: 400;
 }
 
+
+#hello a {
+	font-size: 60px;
+	color: #3FE8DC;
+}
+
 /* Green */
 #green {
 	background-color: #74cfae;
@@ -231,6 +237,7 @@ a:after {
 	text-align: right;
 	font-weight: 400;
 }
+
 
 /* Image Opacity */
 .grid img {
