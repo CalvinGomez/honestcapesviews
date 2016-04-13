@@ -27,8 +27,8 @@ body{
 }
 
 /* FONTS */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
 
 /* OVERALL ASPECT */
 
@@ -48,7 +48,7 @@ body {
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway";
-    font-weight: 300;
+    font-weight: 200;
     color: #333;
 }
 
@@ -69,7 +69,7 @@ p {
 
 /* Links */
 a {
-    color: #f85c37;
+    color: ##;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -109,18 +109,18 @@ a:after {
 .navbar {
 	font-weight: 800;
 	font-size: 14px;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	background-color: #ffffff;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	color: #ffffff;
-	background-color: #74cfae;
+	background-color: #3399ff;
 }
 
 .navbar-brand {
-	font-size: 60px;
+	font-size: 40px;
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
@@ -132,9 +132,9 @@ a:after {
 }
 
 .btn {
-	padding: 10px 30px;
+	padding: 10px 20px;
 	margin-bottom: 0;
-	font-size: 18px;
+	font-size: 15px;
 	border: 5px solid transparent;
 	border-radius: 0px;
 }
@@ -148,19 +148,19 @@ a:after {
 /* hello */
 #hello {
 	width: 100%;
-	padding-top: 250px;
-	padding-bottom: 250px;
+	padding-top: 18%;
+	padding-bottom: 18%;
 }
 
 #hello h1 {
-	font-size: 90px;
+	font-size: 95px;
 	font-weight: 700;
 	letter-spacing: 3px;
-	color: #74cfae;
+	color: #3399ff;
 }
 
 #hello h2 {
-	color: #c0c0c0;
+	color: #808080;
 	font-weight: 400;
 }
 
