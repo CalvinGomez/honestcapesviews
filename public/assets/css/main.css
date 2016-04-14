@@ -116,7 +116,7 @@ a:after {
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	color: #ffffff;
-	background-color: #3399ff;
+	background-color: #3FE8DC;
 }
 
 .navbar-brand {
@@ -166,8 +166,8 @@ a:after {
 
 
 #twitter {
-	width: 50%;
-	height: 50%;
+	font-size: 70px;
+	vertical-align: center;
 	color: #3FE8DC;
 }
 
