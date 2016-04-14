@@ -165,8 +165,9 @@ a:after {
 }
 
 
-#hello a {
-	font-size: 60px;
+#twitter {
+	width: 50%;
+	height: 50%;
 	color: #3FE8DC;
 }
 
